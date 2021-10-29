@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+		<main id="main-doc">
+			<section id="header">
+    		<h1>Masks Character Sheet</h1>
+			</section>
+
+			<section id="binder" class="binder">
+				<section id="start">
+					<div id="infoForm">
+						<form>
+							<div id="formName" class="form">
+								<p><label for="formName">Name: </label>
+								<input type="text" 
+									id="nameInput"
+									name="formName"
+									placeholder="Character name">
+								</input></p>
+							</div> <!-- closing formName -->
+
+							<div id="formPlay" class="form">
+								<p><label for="formPlay">Playbook: </label>
+								<select name="formPlay" id="playInput">
+									<option value=" "> Your Playbook </option>
+									<option value="The Beacon">The Beacon</option>
+									<option value="The Bull">The Bull</option>
+									<option value="The Delinquent">The Delinquent</option>
+									<option value="The Doomed">The Doomed</option>
+									<option value="The Janus">The Janus</option>
+									<option value="The Legacy">The Legacy</option>
+									<option value="The Nova">The Nova</option>
+									<option value="The Outsider">The Outsider</option>
+									<option value="The Protege">The Protege</option>
+									<option value="The Transformed">The Transformed</option>
+								</select>
+								</p>
+							</div> <!-- closing formPlay -->
+
+							<div id="formLooks" class="form">
+								<p>What do you look like?</p>
+								<textarea id="looksInput">
+								</textarea>
+							</div> <!-- closing formLooks -->
+
+							<button id="submit" onclick="return createCharacter()">Create Character</button>
+						</form>
+					</div> <!-- closing infoForm-->
+
+				</section> <!-- closing start-->
+
+				<div id="sheet1">
+				<div id="page1">
+					<div id="leftSide1">
+						<div id="charInfo">
+								<p>Name: <span id="charName"></span></p>
+								<p>Playbook: <span id="charPlay"></span></p>
+								<p>Looks:<br>
+								<span id="charLooks"></span></p>
+						</div> <!-- closing charInfo -->
+
+						<div id="displayRolls">
+								<p>Dice rolls will go here</p>
+						</div><!-- closing displayRolls -->
+
+						<div id="clear-btn">
+								<img src="images/eraser.png" alt="rubber eraser" id="clear-rolls" onclick="">
+						</div> <!-- closing clear-btn -->
+					</div> <!-- closing leftSide1 -->
+
+					<div id="rightSide1">
+						<div id="danger" class="stat">
+							<button id="dangerMod" class="modifiers" onclick="">0</button>
+							<h3>Danger</h3>
+							<button id="incDanger" class="adj" onclick="">+1</button>
+							<button id="decDanger" class="adj" onclick="">-1</button>
+						</div><!-- closing danger -->
+
+						<div id="freak" class="stat">
+							<button id="freakMod" class="modifiers" onclick="">0</button>
+							<h3>Freak</h3>
+							<button id="incFreak" class="adj" onclick="">+1</button>
+							<button id="decFreak" class="adj" onclick="">-1</button>	
+						</div><!-- closing freak -->
+
+						<div id="savior" class="stat">
+							<button id="saviorMod" class="modifiers" onclick="">0</button>
+							<h3>Savior</h3>
+							<button id="incSavior" class="adj" onclick="">+1</button>
+							<button id="decSavior" class="adj" onclick="">-1</button>
+						</div><!-- closing savior -->
+
+						<div id="superior" class="stat">
+							<button id="superiorMod" class="modifiers" onclick="">0</button>
+							<h3>Superior</h3>
+							<button id="incSuperior" class="adj" onclick="">+1</button>
+							<button id="decSuperior" class="adj" onclick="">-1</button>
+						</div><!-- closing superior -->
+
+						<div id="mundane" class="stat">
+							<button id="mundaneMod" class="modifiers" onclick="">0</button>
+							<h3>Mundane</h3>
+							<button id="incMundane" class="adj" onclick="">+1</button>
+							<button id="decMundane" class="adj" onclick="">-1</button>
+							
+						</div><!-- closing mundane -->
+
+						<div id="conditions">
+							<h3>Conditions</h3>
+							<input type="checkbox" name="afraid" id="afraid">
+								<label for="afraid">Afraid</label><br>
+							<input type="checkbox" name="angry" id="angry">
+								<label for="angry">Angry</label></br>
+							<input type="checkbox" name="guilty" id="guilty">
+								<label for="guilty">Guilty</label><br>
+							<input type="checkbox" name="hopeless" id="hopeless">
+								<label for="hopeless">Hopeless</label><br>
+							<input type="checkbox" name="insecure" id="insecure">
+								<label for="insecure">Insecure</label><br>
+						</div>
+					</div> <!-- closing rightSide1 -->
+
+				</div><!-- closing page1 -->
+				</div><!-- closing sheet1 -->
+			</div> <!-- closing binder -->
+    <script src="script.js"></script>
+		</main>
+  </body>
+</html>
