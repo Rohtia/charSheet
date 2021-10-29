@@ -162,5 +162,27 @@ h3 {
 		margin: 20px;
 		grid-gap: 30px;
 	}
+	.stat {
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-rows: 1fr .25fr 1fr;
+	}
+	.modifiers {
+		grid-column-start: 2;
+		grid-row-start: 1;
+		width: 100%;
+		font-size: 1.5rem;
+	}
+	.statName {
+		grid-column-start: 2;
+		grid-row-start: 3;
+	}
+	.adj {
+		grid-row-start: 3;
+	}
+	.dec {
+		grid-column-start: 3;
+	}
+	
 	
 }
