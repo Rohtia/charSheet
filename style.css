@@ -48,6 +48,7 @@ h3 {
   textarea {
       width: 70%;
       height: 150px;
+			text-align: left;
   }
   
   #submit {
@@ -128,7 +129,7 @@ h3 {
 		font-size: 1.1rem;
   }
 
-@media (min-width: 501px) {
+@media (min-width: 950px) {
 	#main-doc {
 		width: 950px;
 		font-size: 1.2rem;
@@ -142,13 +143,11 @@ h3 {
 	}
 
 	#page1 {
-		border: 1px solid black;
 		width: 90%;
 		grid-gap: 50px;
 	}
 
 	#leftSide1 {
-		border: 1px solid pink;
 		grid-gap: 10px;
 	}
 	#displayRolls {
@@ -160,8 +159,8 @@ h3 {
 	}
 
 	#rightSide1 {
-		border: 1px solid blue;
 		margin: 20px;
 		grid-gap: 30px;
 	}
+	
 }

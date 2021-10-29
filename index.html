@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=screen-width">
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
@@ -45,8 +45,7 @@
 
 							<div id="formLooks" class="form">
 								<p>What do you look like?</p>
-								<textarea id="looksInput">
-								</textarea>
+								<textarea id="looksInput"></textarea>
 							</div> <!-- closing formLooks -->
 
 							<button id="submit" onclick="return createCharacter()">Create Character</button>
@@ -61,8 +60,8 @@
 						<div id="charInfo">
 								<p>Name: <span id="charName"></span></p>
 								<p>Playbook: <span id="charPlay"></span></p>
-								<p>Looks:<br>
-								<span id="charLooks"></span></p>
+								<p>Looks: 
+									<span id="charLooks"></span></p>
 						</div> <!-- closing charInfo -->
 
 						<div id="displayRolls">

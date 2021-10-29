@@ -1,41 +1,22 @@
-var formPage = document.getElementById('start');
-var sheet1 = document.getElementById('sheet1');
-// var cChar = document.getElementById("submit");
+var formPage = document.getElementById("start");
+var sheet1 = document.getElementById("sheet1");
+var inputName = document.getElementById("nameInput"); // name from form
+var inputPlay = document.getElementById("playInput"); // playbook from form 
+var inputLooks = document.getElementById("looksInput"); // looks from form
+var displayName = document.getElementById("charName"); // name on character sheet 
+var displayPlay = document.getElementById("charPlay"); // playbook on character sheet
+var displayLooks = document.getElementById("charLooks"); // looks on character sheet 
 
-// cChar.addEventListener("click", createCharacter());
 
+// on form submit, change to start display:none and sheet1 display: block to hide the form and show character sheet
 function createCharacter() {
-	console.log("create character running");
-	// get value of form display
-	
-		formPage.style.display = 'none';
-		console.log("form hidden");
-		sheet1.style.display = 'block';
-		console.log("char sheet visible");
-		return false;
+	formPage.style.display = 'none';
+	sheet1.style.display = 'block';
+	// take form information and display it on character sheet
+	displayName.textContent = inputName.value;
+	displayPlay.textContent = inputPlay.value;
+	console.log(inputLooks.value);
+	displayLooks.textContent = inputLooks.value;
+
+	return false;
 }
-
- function toggleClock() {
-    // get the clock
-    var myClock = document.getElementById('clock');
-
-    // get the current value of the clock's display property
-    var displaySetting = myClock.style.display;
-
-    // also get the clock button, so we can change what it says
-    var clockButton = document.getElementById('clockButton');
-
-    // now toggle the clock and the button text, depending on current state
-    if (displaySetting == 'block') {
-      // clock is visible. hide it
-      myClock.style.display = 'none';
-      // change button text
-      clockButton.innerHTML = 'Show clock';
-    }
-    else {
-      // clock is hidden. show it
-      myClock.style.display = 'block';
-      // change button text
-      clockButton.innerHTML = 'Hide clock';
-    }
-  }
